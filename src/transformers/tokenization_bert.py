@@ -31,6 +31,8 @@ VOCAB_FILES_NAMES = {"vocab_file": "vocab.txt"}
 
 PRETRAINED_VOCAB_FILES_MAP = {
     "vocab_file": {
+        "q8bert-large-uncased-whole-word-masking": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-vocab.txt",
+        "q8bert-base-uncased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt",
         "bert-base-uncased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt",
         "bert-large-uncased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-vocab.txt",
         "bert-base-cased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-vocab.txt",
@@ -53,6 +55,8 @@ PRETRAINED_VOCAB_FILES_MAP = {
 }
 
 PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
+    "q8bert-large-uncased-whole-word-masking": 512,
+    "q8bert-base-uncased": 512,
     "bert-base-uncased": 512,
     "bert-large-uncased": 512,
     "bert-base-cased": 512,
@@ -74,6 +78,8 @@ PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
 }
 
 PRETRAINED_INIT_CONFIGURATION = {
+    "q8bert-large-uncased-whole-word-masking": {"do_lower_case": True},
+    "q8bert-base-uncased": {"do_lower_case": True},
     "bert-base-uncased": {"do_lower_case": True},
     "bert-large-uncased": {"do_lower_case": True},
     "bert-base-cased": {"do_lower_case": False},

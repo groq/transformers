@@ -24,6 +24,7 @@ from .configuration_utils import PretrainedConfig
 logger = logging.getLogger(__name__)
 
 BERT_PRETRAINED_CONFIG_ARCHIVE_MAP = {
+    "q8bert-base-uncased": "https://nlp-architect-data.s3-us-west-2.amazonaws.com/models/transformers/bert-base-uncased.json",
     "bert-base-uncased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json",
     "bert-large-uncased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-config.json",
     "bert-base-cased": "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-config.json",
