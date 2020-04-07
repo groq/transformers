@@ -4,8 +4,6 @@
 .env
 target
 
-Cargo.lock
-
 /data
 tokenizers/data
 bindings/python/tests/data
